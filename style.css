@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+header>h2>a{
+    text-decoration: none;
+    font-size: xxx-large;
+}
+
+.search-input{
+    height: 2rem;
+    width: 15%;
+    font-size: x-large;
+    padding: 1.5rem 0.5rem;
+    border: 1px solid #551a8b;
+}
+
+
+.search-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.submit-btn{
+    background-color: #551a8b;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    cursor: pointer;
+}
+
+.single-img{
+    max-width: fit-content;
+    /* margin: 2rem 0rem; */
+}
+
+.single-img>div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 0.5rem;
+}
+
+.single-img>div>div>a>button{
+    appearance: none;
+    border: none;
+    background-color: white;
+    color: dimgrey;
+    text-decoration: underline;
+    font-size: large;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.img-credit{
+    color: black;
+    font-weight: 900;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    width: 80%;
+    padding: 2rem 0rem;
+    margin: auto;
+    row-gap: 5rem;
+    column-gap: 3rem;
+}
+
+.nav-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.more{
+    padding: 1rem 3rem;
+    background-color: #551a8b;
+    color: white;
+    border: none;
+}
+
+.scrollup{
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
